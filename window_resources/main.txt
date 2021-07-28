@@ -1,0 +1,24 @@
+palette=QtGui.QPalette()
+        # palette.setBrush(QtGui.QPalette.Background,QBrush(QPixmap("./window resources/background.png")))
+        palette.setBrush(MainWindow.backgroundRole(),QBrush(QPixmap("./window resources/background.png").scaled(MainWindow.size(),QtCore.Qt.IgnoreAspectRatio,QtCore.Qt.SmoothTransformation)))
+        MainWindow.setPalette(palette)
+
+
+
+
+
+
+
+
+
+
+
+import sys
+if __name__ == "__main__":
+    app=QtWidgets.QApplication(sys.argv)
+    MainWindow = QtWidgets.QMainWindow()
+    ui = Ui_MainWindow()
+    ui.setupUi(MainWindow)
+    MainWindow.setWindowFlags(QtCore.Qt.WindowCloseButtonHint)
+    MainWindow.show()
+    sys.exit(app.exec_())

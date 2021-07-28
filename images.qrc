@@ -1,0 +1,7 @@
+<RCC>
+  <qresource prefix="png">
+    <file>window resources/transparent.png</file>
+    <file>window resources/present10.png</file>
+    <file>window resources/background.png</file>
+  </qresource>
+</RCC>
